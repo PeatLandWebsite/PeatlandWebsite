@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peatland Website</title>
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
 <body>
-<h1>Welcome to the Peatland Disturbance and Human Footprint Research Project</h1>
-<p th:text="${message}">Default Message</p>
+<h1> Modelling Peatland Disturbance / Conversion in Alberta: Understanding Baselines</h1>
+<nav>
+    <a href="/Founders">Founders</a>
+    <a href="/Teams">Teams</a>
+    <a href="/Data">Data</a>
+    <a href="/ResearchOutputs">ResearchOutputs</a>
+</nav>
+<div class="content-section1">
+    <h2 th:text="${message1}">Overview</h2>
+    <p th:text="${message1_p}">Default Message</p>
+    <h2 th:text="${message2}">Research Ideals</h2>
+    <p th:text="${message2_p}">Default Message</p>
+</div>
 </body>
 </html>

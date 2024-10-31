@@ -11,7 +11,12 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         // Add the message to the model to display it on the view
-        model.addAttribute("message", "The Peatland Disturbance and Human Footprint Research Project website is dedicated to studying the impacts of human activities on peatlands, focusing on developing advanced machine learning models to forecast peatland disturbances. By leveraging datasets from the Alberta Biodiversity Monitoring Institute (ABMI) and incorporating human footprint data, the project aims to build accurate models that can capture complex spatial and temporal dynamics. This research explores diverse human-induced factors, such as industrial activities, agricultural land expansion, and infrastructure development, which contribute to peatland degradation. Utilizing modern machine learning techniques like CNNs, LSTMs, and Transformers, along with high-performance computing, the project seeks to provide data-driven insights and predictive tools to inform conservation policies, manage ecological impacts, and support sustainable land use in Alberta and beyond.");
+        model.addAttribute("message1_p", "Peatlands are vital ecosystems that store carbon, regulate water, and support biodiversity, making them crucial for climate change mitigation. However, extensive peatland loss has occurred due to human activities such as oil extraction, forestry, and agriculture—particularly in Canada, where up to 70% of wetlands in major agricultural areas have been impacted. Alberta’s energy sector has notably affected peatlands, with oil, gas, and mining activities disturbing thousands of square kilometres. Given peatlands' irreplaceable role in carbon storage, preserving these ecosystems is essential, though recent studies raise questions about the economic viability of conservation efforts.\n" +
+                "\n" +
+                "This project develops models to estimate baseline disturbance rates in Alberta’s peatlands, examining how major human activities such as energy and agricultural activities contribute to peatland conversion and degradation. By establishing these baseline rates, the research will forecast peatland loss under alternative scenarios, assess conservation costs, and explore viable retention strategies. Findings will assist decision-makers in creating sustainable peatland management policies in Alberta, benefiting both climate objectives and local communities.");
+        model.addAttribute("message1","Overview");
+        model.addAttribute("message2","Research Ideas");
+        model.addAttribute("message2_p","Let Me thinks");
         return "home";  // Return the view name (index.html)
     }
 }
